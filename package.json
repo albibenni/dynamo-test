@@ -1,15 +1,22 @@
 {
-  "name": "dynamo-test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-      "prettier": "^3.2.5",
-      "typescript":"^5.5.3"
-  }
+    "name": "dynamo-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:testing:db": "docker compose up testing-db"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.616.0",
+        "@aws-sdk/lib-dynamodb": "^3.616.0",
+        "vitest": "^2.0.3",
+        "zod": "^3.23.8"
+    }
 }
