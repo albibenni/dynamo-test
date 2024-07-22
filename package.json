@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start:testing:db": "docker compose up testing-db"
+        "start:testing:db": "docker compose up testing-db",
+        "test": "vitest"
     },
     "keywords": [],
     "author": "",
